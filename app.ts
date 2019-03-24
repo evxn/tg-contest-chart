@@ -657,7 +657,7 @@ const createNightSwitch = (night: boolean) => {
 }
 
 function main() {
-	fetch('../chart_data.json').then((res) => {
+	fetch('chart_data.json').then((res) => {
 		res.json().then(rawData => {
 			const data = parseRawData(rawData);
 			const root = getById('root')!;
